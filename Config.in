@@ -1,0 +1,9 @@
+config BR2_PACKAGE_OD_NETWORK_CONFIG
+	bool "OpenDingux network configuration GUI"
+	depends on BR2_PACKAGE_PYTHON_PYGAME
+	select BR2_PACKAGE_PYTHON_PYGAME_FONT
+	help
+	  This small application lets the user configure networking on
+	  OpenDingux based systems.
+
+	  https://github.com/tonyjih/RG350_buildroot/tree/opendingux-2014.08/board/opendingux/package/od-network-config
